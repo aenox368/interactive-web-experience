@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An Interactive 18th Birthday Experience</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ambient" id="ambient-layer" aria-hidden="true"></div>
+
+<button class="music-toggle" id="music-toggle" data-playing="false" aria-label="Toggle background music">&#9835;</button>
+
+<div id="app">
+
+  <!-- ============ PAGE 1 — ENTRANCE ============ -->
+  <section class="page" id="page-entrance">
+    <div class="section-inner entrance-content">
+      <span class="entrance-eyebrow" id="entrance-eyebrow"></span>
+      <h1 class="entrance-title" id="entrance-title"></h1>
+      <p class="entrance-sub" id="entrance-sub"></p>
+      <div class="entrance-actions">
+        <button class="btn btn-primary" id="entrance-btn"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2 — BIRTHDAY ============ -->
+  <section class="page" id="page-birthday">
+    <div class="section-inner">
+      <div class="birthday-grid">
+        <div class="portrait-frame">
+          <img id="birthday-photo" alt="">
+        </div>
+        <div>
+          <h2 class="birthday-heading" id="birthday-heading" data-name></h2>
+          <div class="birthday-text" id="birthday-text"></div>
+        </div>
+      </div>
+      <div class="birthday-footer">
+        <span class="more-label" id="birthday-continue-label"></span>
+        <button class="btn btn-gift" id="birthday-continue-btn">Open the gifts</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 3 — GIFTS ============ -->
+  <section class="page" id="page-gifts">
+    <div class="section-inner">
+      <div class="gifts-header">
+        <h2 data-name>18 little things, Mira.</h2>
+        <p>Go slow. There's no rush.</p>
+      </div>
+
+      <div class="gift-grid" id="gift-grid"></div>
+
+      <div class="gifts-pagination">
+        <button class="nav-arrow" id="gifts-prev" aria-label="Previous gifts">&#8592;</button>
+        <span class="page-indicator" id="gifts-page-indicator">1 / 4</span>
+        <button class="nav-arrow" id="gifts-next" aria-label="Next gifts">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 4 — CREDITS / ABOUT THE PROJECT ============ -->
+  <section class="page" id="page-credits">
+    <div class="section-inner credits-inner">
+      <span class="credits-eyebrow" id="credits-eyebrow"></span>
+      <h2 class="credits-title" id="credits-title"></h2>
+
+      <div class="credits-story" id="credits-story"></div>
+
+      <div class="credits-divider" aria-hidden="true"></div>
+
+      <div class="credits-list" id="credits-list"></div>
+
+      <p class="credits-closing" id="credits-closing"></p>
+
+      <div class="credits-footer">
+        <button class="btn btn-outline btn-small" id="credits-back-btn"></button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ GIFT MODAL ============ -->
+<div class="modal-overlay" id="gift-modal-overlay" role="dialog" aria-modal="true"></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
