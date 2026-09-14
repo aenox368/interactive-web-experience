@@ -40,6 +40,13 @@ others. It closes with a dedicated Credits / About the Project page.
   so the entire site's content can be rewritten without touching any
   HTML, CSS, or app logic.
 
+
+📖 Documentation
+→ See the documentation folder for guides and posters.
+
+📦 Download
+→ Get the complete project package from the downloads folder.
+
 ## Tech stack
 
 - HTML5
